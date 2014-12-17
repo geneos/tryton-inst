@@ -45,10 +45,18 @@ mv trytond-3.2.0 trytond
  
 ####Crear o editar el archivo etc/trytond.conf
 
-Editar o copiar el archivo trytond.conf
+Editar el archivo trytond.conf. Modificar las siguientes líneas:
+>jsonrpc = *:8000
+>db_host = localhost
+>db_port = 5432
+>db_user = tryton
+>db_password = tryton
+># Timezone of the server
+>timezone = America/Argentina/Buenos_Aires
+>admin_passwd = admin
 
 
-####Levantar y probar si funciona creando una base
+####Iniciar el servidor (probar si todo funciona creando una base)
 
 trytond/bin/trytond -c trytond/etc/trytond.conf
 
@@ -77,7 +85,7 @@ trytond/bin/trytond -i all -d TESTDB
 donde: TESTDB es el nombre de la base de datos
 
 
-####Levantar el servidor
+####Iniciar el servidor
 
 trytond/bin/trytond -c trytond/etc/trytond.conf
 
