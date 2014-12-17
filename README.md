@@ -16,13 +16,16 @@ tryton-inst
 ####Ir al home del usuario y crear una carpeta nueva donde alojar los distintos virtualenvs 
 
 `cd /home/usuario`
+
 `mkdir tryton-desarrollo`
+
 `cd trytond-desarrollo`
 
 
 ####Crear el entorno virtual
 
 `virtualenv tryton-virtual`
+
 `cd tryton-virtual`
 
 
@@ -38,6 +41,7 @@ tryton-inst
 ####Descargar Tryton 3.2, descomprir y mover la carpeta
 
 `wget http://downloads.tryton.org/3.2/trytond-3.2.0.tar.gz`
+
 `tar -xvf trytond-3.2.0.tar.gz`
 
 `mv trytond-3.2.0 trytond`
