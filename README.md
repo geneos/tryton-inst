@@ -46,6 +46,7 @@ tryton-inst
 ####Crear o editar el archivo etc/trytond.conf
 
 Editar el archivo trytond.conf. Modificar las siguientes líneas:
+
  `jsonrpc = *:8000 `
  
  `db_host = localhost `
