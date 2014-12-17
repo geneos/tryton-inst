@@ -1,7 +1,8 @@
 tryton-inst
 ===========
 
-###  Instalación de entorno Tryton 3.2 para desarrollo utilizando virtualenv + PIP
+##  Instalación de entorno Tryton 3.2 para desarrollo
+###  Instalación utilizando virtualenv + PIP
 
 ####Prerequisitos: 
 - Tener postgresql instalado y corriendo 
@@ -11,16 +12,19 @@ tryton-inst
 
 sudo apt-get install python-pip python-virtualenv virtualenvwrapper python-dev libldap2-dev libsasl2-dev
 
+
 ####Ir al home del usuario y crear una carpeta nueva donde alojar los distintos virtualenvs 
 
 cd /home/usuario
 mkdir tryton-desarrollo
 cd trytond-desarrollo
 
+
 ####Crear el entorno virtual
 
 virtualenv tryton-virtual
 cd tryton-virtual
+
 
 ####Activar virtualenv e instalar paquetes necesarios
 
@@ -30,12 +34,14 @@ pip install pip -U
 
 pip install psycopg2 python-dateutil relatorio PyWebDAV pydot pytz openoffice-python vatnumber beautifulsoup4 vobject python-sql polib python-ldap simpleeval
 
+
 ####Descargar Tryton 3.2, descomprir y mover la carpeta
 
 wget http://downloads.tryton.org/3.2/trytond-3.2.0.tar.gz
 tar -xvf trytond-3.2.0.tar.gz
 
 mv trytond-3.2.0 trytond
+ 
  
 ####Crear o editar el archivo etc/trytond.conf
 
@@ -69,6 +75,7 @@ pip install trytond-party==3.2
 trytond/bin/trytond -i all -d TESTDB
 
 donde: TESTDB es el nombre de la base de datos
+
 
 ####Levantar el servidor
 
