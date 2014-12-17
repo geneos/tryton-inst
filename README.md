@@ -25,13 +25,16 @@ cd tryton-virtual
 ####Activar virtualenv e instalar paquetes necesarios
 
 source bin/activate
+
 pip install pip -U
+
 pip install psycopg2 python-dateutil relatorio PyWebDAV pydot pytz openoffice-python vatnumber beautifulsoup4 vobject python-sql polib python-ldap simpleeval
 
 ####Descargar Tryton 3.2, descomprir y mover la carpeta
 
 wget http://downloads.tryton.org/3.2/trytond-3.2.0.tar.gz
 tar -xvf trytond-3.2.0.tar.gz
+
 mv trytond-3.2.0 trytond
  
 ####Crear o editar el archivo etc/trytond.conf
@@ -49,10 +52,15 @@ Tryton sólo trae tres módulos por defecto: ir, res, webdav.
 Para instalar los módulos necesarios ejecutar los siguientes comandos PIP:
 
 pip install trytond-account==3.2
+
 pip install trytond-company==3.2
+
 pip install trytond-country==3.2
+
 pip install trytond-currency==3.2
+
 pip install trytond-party==3.2
+
 pip install trytond-party==3.2
 
 
