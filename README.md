@@ -19,17 +19,19 @@ tryton-inst
 
 `mkdir tryton-desarrollo`
 
+
+
+####Crear el entorno virtual dentro de la carpeta tryton-desarrollo
+
 `cd trytond-desarrollo`
-
-
-####Crear el entorno virtual
 
 `virtualenv tryton-virtual`
 
-`cd tryton-virtual`
 
 
 ####Activar virtualenv e instalar paquetes necesarios
+
+`cd tryton-virtual`
 
 `source bin/activate`
 
