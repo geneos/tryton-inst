@@ -46,14 +46,14 @@ mv trytond-3.2.0 trytond
 ####Crear o editar el archivo etc/trytond.conf
 
 Editar el archivo trytond.conf. Modificar las siguientes líneas:
- `jsonrpc = *:8000
-db_host = localhost
-db_port = 5432
-db_user = tryton
-db_password = tryton
-# Timezone of the server
-timezone = America/Argentina/Buenos_Aires
-admin_passwd = admin `
+ `jsonrpc = *:8000 `
+ `db_host = localhost `
+ `db_port = 5432 `
+ `db_user = tryton `
+ `db_password = tryton `
+ `# Timezone of the server `
+ `timezone = America/Argentina/Buenos_Aires `
+ `admin_passwd = admin `
 
 
 ####Iniciar el servidor (probar si todo funciona creando una base)
