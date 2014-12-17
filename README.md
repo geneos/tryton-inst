@@ -1,53 +1,52 @@
 tryton-inst
 ===========
 
-Instalación de entorno Tryton para desarrollo
+###  Instalación de entorno Tryton 3.2 para desarrollo utilizando virtualenv + PIP
 
-### Como instalar Tryton dentro del virtualenv
+####Prerequisitos: 
+- Tener postgresql instalado y corriendo 
+- Crear en postgres un rol de usuario "tryton" con password "tryton"
 
-Prerequisitos: 
-- postgresql instalado 
-- Rol de usuario tryton con password tryton creado
+####Instalar python y otros paquetes necesarios 
 
-## Instalar python y otros paquetes necesarios 
-sudo apt-get install python-pip python-virtualenv virtualenvwrapper python-dev libldap2-dev libsasl2-dev exuberant-ctags
+sudo apt-get install python-pip python-virtualenv virtualenvwrapper python-dev libldap2-dev libsasl2-dev
 
+####Ir al home del usuario y crear una carpeta nueva donde alojar los distintos virtualenvs 
 
-## Ir al home de usuario y crear una carpeta donde alojar los virtualenvs 
 cd /home/usuario
 mkdir tryton-desarrollo
 cd trytond-desarrollo
 
-## Crear un entorno virtual
+####Crear el entorno virtual
 
-virtualenv tryton-virtual1
-cd tryton-virtual1
+virtualenv tryton-virtual
+cd tryton-virtual
 
-## Activar virtualenv e instalar paquetes necesarios
+####Activar virtualenv e instalar paquetes necesarios
 
 source bin/activate
-
 pip install pip -U
 pip install psycopg2 python-dateutil relatorio PyWebDAV pydot pytz openoffice-python vatnumber beautifulsoup4 vobject python-sql polib python-ldap simpleeval
 
-
-##Descargar Tryton 3.2, descomprir y mover la carpeta
+####Descargar Tryton 3.2, descomprir y mover la carpeta
 
 wget http://downloads.tryton.org/3.2/trytond-3.2.0.tar.gz
 tar -xvf trytond-3.2.0.tar.gz
 mv trytond-3.2.0 trytond
  
-##Crear o editar el archivo etc/trytond.conf
+####Crear o editar el archivo etc/trytond.conf
 
 Editar o copiar el archivo trytond.conf
 
 
-##Levantar y probar si funciona creando una base
+####Levantar y probar si funciona creando una base
 
 trytond/bin/trytond -c trytond/etc/trytond.conf
 
 
-##Ahora instalar módulos según cada caso
+####Instalar módulos según cada caso
+Tryton sólo trae tres módulos por defecto: ir, res, webdav.
+Para instalar los módulos necesarios ejecutar los siguientes comandos PIP:
 
 pip install trytond-account==3.2
 pip install trytond-company==3.2
@@ -57,11 +56,13 @@ pip install trytond-party==3.2
 pip install trytond-party==3.2
 
 
-##Registrar los módulos
+####Para registrar los módulos en la base ya creada
 
-trytond/bin/trytond -i all -d TEST2
+trytond/bin/trytond -i all -d TESTDB
 
-##Levantar el servidor
+donde: TESTDB es el nombre de la base de datos
+
+####Levantar el servidor
 
 trytond/bin/trytond -c trytond/etc/trytond.conf
 
