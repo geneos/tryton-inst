@@ -42,11 +42,11 @@ tryton-inst
 
 ####Descargar Tryton 3.2, descomprir y mover la carpeta
 
-`wget http://downloads.tryton.org/3.2/trytond-3.2.0.tar.gz`
+`wget http://downloads.tryton.org/3.2/trytond-3.0.4.tar.gz`
 
-`tar -xvf trytond-3.2.0.tar.gz`
+`tar -xvf trytond-3.0.4.tar.gz`
 
-`mv trytond-3.2.0 trytond`
+`mv trytond-3.0.4 trytond`
  
  
 ####Crear o editar el archivo etc/trytond.conf
@@ -64,17 +64,14 @@ Debe estar ubicado en trytond/etc
 Tryton sólo trae tres módulos por defecto: ir, res, webdav.
 Para instalar los módulos necesarios ejecutar los siguientes comandos PIP:
 
-`pip install trytond-account==3.2`
-
-`pip install trytond-company==3.2`
-
-`pip install trytond-country==3.2`
-
-`pip install trytond-currency==3.2`
-
-`pip install trytond-party==3.2`
-
-`pip install trytond-party==3.2`
+pip install trytond-account==3.0.4
+pip install trytond-account_invoice==3.0.4
+pip install trytond-account_product==3.0
+pip install trytond-company==3.0
+pip install trytond-product==3.0
+pip install trytond-sale==3.0
+pip install trytond-product_price_list==3.0
+pip install trytond-stock==3.0
 
 
 ####Para registrar los módulos en la base ya creada
