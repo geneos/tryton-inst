@@ -1,7 +1,7 @@
 tryton-inst
 ===========
 
-##  Instalación de entorno Tryton 3.2 para desarrollo
+##  Instalación de entorno Tryton 3.0.4 para desarrollo
 ###  Instalación utilizando virtualenv + PIP
 
 ####Prerequisitos: 
