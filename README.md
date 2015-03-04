@@ -80,6 +80,9 @@ pip install trytond-product_price_list==3.0
 
 pip install trytond-stock==3.0
 
+pip install z3c.rml
+
+
 
 ####Para registrar los módulos en la base ya creada
 
