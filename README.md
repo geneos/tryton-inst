@@ -37,7 +37,7 @@ tryton-inst
 
 `pip install pip -U`
 
-`pip install psycopg2 python-dateutil relatorio PyWebDAV pydot pytz openoffice-python vatnumber beautifulsoup4 vobject python-sql polib python-ldap simpleeval`
+`pip install psycopg2 python-dateutil relatorio PyWebDAV pydot pytz openoffice-python vatnumber beautifulsoup4 vobject python-sql polib python-z3c python-ldap simpleeval`
 
 
 ####Descargar Tryton 3.2, descomprir y mover la carpeta
