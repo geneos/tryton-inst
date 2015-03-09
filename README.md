@@ -10,7 +10,7 @@ tryton-inst
 
 ####Instalar python y otros paquetes necesarios 
 
-`sudo apt-get install python-pip python-virtualenv virtualenvwrapper python-dev libldap2-dev libsasl2-dev libjpeg-dev libfreetype6 libfreetype6-dev zlib1g-dev`
+`sudo apt-get install python-pip python-virtualenv virtualenvwrapper python-dev libldap2-dev libsasl2-dev
 
 
 ####Ir al home del usuario y crear una carpeta nueva donde alojar los distintos virtualenvs 
