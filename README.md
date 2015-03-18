@@ -40,9 +40,9 @@ tryton-inst
 `pip install psycopg2 python-dateutil relatorio PyWebDAV pydot pytz openoffice-python vatnumber beautifulsoup4 vobject python-sql polib python-z3c python-ldap simpleeval`
 
 
-####Descargar Tryton 3.2, descomprir y mover la carpeta
+####Descargar Tryton 3.0, descomprir y mover la carpeta
 
-`wget http://downloads.tryton.org/3.2/trytond-3.0.4.tar.gz`
+`wget http://downloads.tryton.org/3.0/trytond-3.0.4.tar.gz`
 
 `tar -xvf trytond-3.0.4.tar.gz`
 
